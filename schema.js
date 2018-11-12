@@ -3,12 +3,14 @@
  * # we gonna using the [SpeaceX API]
  */
 
+const axios = require('axios')
+
 const {
   GraphQLObjectType,
   GraphQLInt,
   GraphQLString,
   GraphQLBoolean,
-  GraphQlList
+  GraphQLList
 } = require('graphql')
 
 /*
@@ -57,13 +59,14 @@ const RocketType = new GraphQLObjectType({
 })
 
 // 3° Root Query
-const RootQuery = GraphQLObjectType({
+const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
     launches: {
-      type: new GraphQlList(LaunchType)
-      resolve(parent, args) {
-          
+      type: new GraphQLList(LaunchType),
+      resolve (parent, args) {
+        return axios.get('https://api.spacexdata.com/v3/launches')
+          .then(res => res.data)
       }
     }
   }
