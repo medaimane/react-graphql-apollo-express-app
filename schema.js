@@ -7,7 +7,8 @@ const {
   GraphQLObjectType,
   GraphQLInt,
   GraphQLString,
-  GraphQLBoolean
+  GraphQLBoolean,
+  GraphQlList
 } = require('graphql')
 
 /*
@@ -53,4 +54,17 @@ const RocketType = new GraphQLObjectType({
       type: GraphQLString
     }
   })
+})
+
+// 3° Root Query
+const RootQuery = GraphQLObjectType({
+  name: 'RootQueryType',
+  fields: {
+    launches: {
+      type: new GraphQlList(LaunchType)
+      resolve(parent, args) {
+          
+      }
+    }
+  }
 })
