@@ -31,7 +31,7 @@ const LaunchType = new GraphQLObjectType({
     launch_year: {
       type: GraphQLString
     },
-    launch_data_local: {
+    launch_date_local: {
       type: GraphQLString
     },
     launch_success: {
