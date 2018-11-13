@@ -16,9 +16,14 @@ git clone https://github.com/medaimane/react-graphql-apollo-express-app.git
 # Install dependencies
 npm i
 
-# start server (using nodemon)
-npm run server
+# start client and server (using concurrently)
+npm run dev
 
+# or start react app dev server
+npm run client
+
+# and start server (using nodemon)
+npm run server
 ```
 
 ## Technologies
