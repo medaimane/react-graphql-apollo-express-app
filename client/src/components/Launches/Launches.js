@@ -27,14 +27,17 @@ export class Launches extends Component {
                 {({ loading, error, data }) => {
                     if (loading) return <h2 className="subtitle">Loading...</h2>;
                     if (error){ console.log(error); return <h2 className="subtitle">Error :(</h2>;}
-                
-                    return data.launches.map(({ mission_name, launch_year }) => (
-                        <div>
-                            <h2 className="subtitle">
-                                data :)
-                            </h2>
-                            <div key={mission_name}>
-                            <p>{`${mission_name}: ${launch_year}`}</p>
+        
+                    return data.launches.map(({
+                        flight_number,
+                        mission_name,
+                        launch_year,
+                        launch_date_local,
+                        launch_success
+                    }) => (
+                        <div key={flight_number}>
+                            <div >
+                            <p>{`${flight_number} - ${mission_name}: ${launch_date_local} (${launch_year}) | ${launch_success}`}</p>
                             </div>
                         </div>
                     ));
