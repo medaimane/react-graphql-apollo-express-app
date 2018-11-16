@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
-import gql from "graphql-tag";
 
 import './App.css';
+import Launches from './Launches/Launches';
 
 const client = new ApolloClient({
   uri: "http://localhost:5000/graphql"
@@ -23,6 +23,13 @@ class App extends Component {
                 <h2 className="subtitle">
                   Github
                 </h2>
+              </div>
+            </div>
+          </section>
+          <section className="hero is-medium is-bold">
+            <div className="hero-body">
+              <div className="container">
+                  <Launches />
               </div>
             </div>
           </section>
