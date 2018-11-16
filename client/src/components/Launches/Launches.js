@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Query } from "react-apollo";
 import gql from "graphql-tag"
 
@@ -17,7 +17,7 @@ const LaunchesQuery = gql`
 export class Launches extends Component {
   render() {
     return (
-        <div>
+        <Fragment>
             <h1 className="title">
                 Luanches :)
             </h1>
@@ -36,7 +36,7 @@ export class Launches extends Component {
                         launch_success
                     }) => (
                         <div key={flight_number}>
-                            <div >
+                            <div>
                             <p>{`${flight_number} - ${mission_name}: ${launch_date_local} (${launch_year}) | ${launch_success}`}</p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ export class Launches extends Component {
 
             </Query>
 
-        </div>
+        </Fragment>
     )
   }
 }
