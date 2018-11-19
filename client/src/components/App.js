@@ -21,7 +21,7 @@ class App extends Component {
                   Hello to React, Apollo and GraphQL Client
                 </h1>
                 <h2 className="subtitle">
-                  Github
+                  Created by medaimane  2018
                 </h2>
               </div>
             </div>
@@ -33,6 +33,19 @@ class App extends Component {
               </div>
             </div>
           </section>
+          <footer className="footer">
+            <div className="content has-text-centered">
+              <p>
+                <strong>ReactGraphQL-Bulma</strong> by <a href="https://medaimane.github.io" target="_blank" rel="noopener noreferrer">medaimane</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php" target="_blank" rel="noopener noreferrer"> MIT</a>. View the repo on <a className="button is-small" href="https://github.com/medaimane/react-graphql-apollo-express-app/" target="_blank" rel="noopener noreferrer">
+                  <span className="icon is-small">
+                    <i className="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+              </p>
+            </div>
+          </footer>
         </div>
       </ApolloProvider>
     );
