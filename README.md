@@ -1,6 +1,6 @@
 # React App with GraphQl, Apollo and Express
 
-## Endpoints
+## Project
 
 - Client : setup a client example to query data from server and view it, using [react](https://reactjs.org), [apollo client](https://www.apollographql.com/docs/react/), [graphql](https://graphql.org/) and [bulma css](https://bulma.io/) for styles.
 
