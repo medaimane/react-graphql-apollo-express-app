@@ -13,7 +13,7 @@
   "author": "Mohamed Aimane Skhairi",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "concurrently": "^4.0.1",
     "cors": "^2.8.5",
     "express": "^4.16.4",
