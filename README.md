@@ -2,6 +2,8 @@
 
 ## Project
 
+!! The project might be deprecated
+
 - Client : setup a client example to query data from server and view it, using [react](https://reactjs.org), [apollo client](https://www.apollographql.com/docs/react/), [graphql](https://graphql.org/) and [bulma css](https://bulma.io/) for styles.
 
 - Server : setup graphql server example with samples queries to get data from external [SpaceX-API](https://github.com/r-spacex/SpaceX-API), using [express](https://expressjs.com/) and graphql schema.
